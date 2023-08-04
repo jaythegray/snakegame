@@ -1,7 +1,7 @@
-const foodSound = new Audio("foodsound.mp3");
-const gamesound = new Audio("gamesound.mp3");
-const gameOver = new Audio("gameover.mp3");
-const move = new Audio("movement.mp3");
+const foodSound = new Audio("Elements/foodsound.mp3");
+const gamesound = new Audio("Elements/gamesound.mp3");
+const gameOver = new Audio("Elements/gameover.mp3");
+const move = new Audio("Elements/movement.mp3");
 let inputDir = { x: 0, y: 0 };
 let speed = 7;
 let lastPaintTime = 0;
