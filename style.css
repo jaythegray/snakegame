@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#board {
+    background: linear-gradient(rgb(151, 219, 130), rgba(210, 164, 164, 0.463));
+    width: 100vmin;
+    height: 92vmin;
+    border: 2px solid rgb(151, 219, 130);
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: rgba(150, 61, 17, 0.799);
+    border: 2px solid rgba(150, 61, 17, 0.799);
+    transform: scale(1.02);
+    border-radius: 12px;
+}
+
+.snake {
+    background-color: rgb(234, 223, 32);
+    border: 2vmin solid rgb(161, 119, 27);
+    border-radius: 15px;
+}
+
+.food {
+    background: rgb(167, 93, 93);
+    border: .25vmin solid rgb(167, 93, 93);
+    border-radius: 9px;
+
+}
+
+#scoreBox {
+    position: absolute;
+    top: 25px;
+    right: 116px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#hiscoreBox {
+    position: absolute;
+    top: 67px;
+    right: 47px;
+    font-size: 30px;
+    font-weight: bold;
+}
